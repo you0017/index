@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>项目导航</title>
+	<style>
+		body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;color:#333}
+		header{background-color:#333;color:#fff;padding:20px;text-align:center}
+		h1{margin-bottom:20px}
+		nav{background-color:#fff;border:1px solid #ccc;border-radius:5px;padding:20px;margin:0 auto;max-width:1400px}
+		nav ul{list-style-type:none;padding:0;display:flex;flex-wrap:wrap;justify-content:space-between}
+		nav ul li{width:calc(46% - 10px);margin-bottom:20px;background-color:#fff;border:1px solid #ccc;border-radius:5px;padding:10px;display:inline-block;cursor:pointer}
+		nav ul li:hover{background-color:#f0f0f0}
+		nav ul li a{text-decoration:none;color:#333;font-weight:bold;display:inline-block;margin:10px 0}
+		nav ul li a:hover{color:red}
+		nav ul li p{margin:10px 0}
+		section{padding:20px;margin:20px auto;max-width:600px;background-color:#fff;border:1px solid #ccc;border-radius:5px}
+		.down-a{font-size:13px;color:#409EFF;}
+		.title-a{margin: 0 10px;font-size: 18px;}
+	</style>
+</head>
+<body>
+<div id="app">
+	<header>
+		<h1>项目导航</h1>
+		<div style="width: 100%;padding-bottom: 25px;">
+			<div style="width: 48%;float: left;cursor: pointer;font-weight:bold;margin-right: 4%;
+			background-color: #909399;color: #EBEEF5;border-radius: 10px;padding: 8px 0;"
+				 onclick="handleClick()">项目</div>
+			<div style="width: 28%;float: left;cursor: pointer;font-weight:bold;
+			background-color: #909399;color: #EBEEF5;border-radius: 10px;padding: 8px 0;"
+				 onclick="handleClicks()">项目拓展技术点</div>
+		</div>
+	</header>
+	<div style="width: 100%;text-align: center;color: #909399;margin: 10px 0;">
+		</div>
+	<nav>
+		<div id="project">
+			<ul>
+				<li>
+					<a href="http://www.helloyouyou.cn/shop" class="title-a" target="_blank">简易商城</a>
+					<!--<a class="down-a" href="http://helloyouyou/res/upload/db.sql"
+					   download="db.sql" target="downloadFile">下载数据库SQL1</a>-->
+					<div style="padding-left: 20px;">
+						<p>用户账号密码：a/a </p>
+						<p>前台项目架构: Tomcat + Servlet + mysql + redis + Vue.js等前端UI框架 + websocket </p>
+						<p>调用api：高德地图 + Ckeditor + 沙箱支付</p>
+						<p>注：高德和沙箱没付费，上线用不了</p>
+						主要功能包括(1.登录注册 2.添加购物车 3.下单 4.下单 5.在线客服)等
+					</div>
+				</li>
+				<li>
+					<a href="http://www.helloyouyou.cn/res" class="title-a" target="_blank">简易外卖</a>
+					<a class="down-a" href="http://helloyouyou/res/upload/db.sql"
+					   download="db.sql" target="downloadFile">下载数据库SQL1</a>
+					<div style="padding-left: 20px;">
+						<p>用户账号密码：a/a </p>
+						<p>项目架构: Tomcat + Servlet + mysql + redis + Vue.js等前端UI框架  </p>
+						主要功能包括(1.登录注册 2.添加购物车 3.下单)等
+					</div>
+				</li>
+				<li>
+					<a href="http://www.helloyouyou.cn/vue" class="title-a" target="_blank">自定义vue</a>
+					<a class="down-a" href="http://www.helloyouyou.cn/vue/upload/vue.js"
+					   download="vue.js" target="downloadFile">自定义vue的js</a>
+					<div style="padding-left: 20px;">
+						自定义vue的属性监听，观察者模式，插值表达式，双向绑定，事件等功能
+					</div>
+				</li>
+				<li>
+					<a href="http://www.helloyouyou.cn/chat" class="title-a" target="_blank">简易聊天室</a>
+					<a class="down-a" href="http://www.helloyouyou.cn/chat/upload/db.sql"
+					   download="db.sql" target="downloadFile">下载数据库SQL1</a>
+					<a class="down-a" href="http://www.helloyouyou.cn/chat/upload/project.sql"
+					   download="project.sql" target="downloadFile">下载数据库SQL2</a>
+					<div style="padding-left: 20px;">
+						<p>用户账号密码：a/a </p>
+						<p>项目架构: Tomcat + Servlet + Vue.js等前端UI框架  </p>
+						主要功能包括(1.登录注册 2.聊天等)等
+					</div>
+				</li>
+				<li>
+					<a href="http://www.helloyouyou.cn/booksManage" class="title-a" target="_blank">简易图书系统</a>
+					<a class="down-a" href="http://www.helloyouyou.cn/booksManage/upload/db.sql"
+					   download="db.sql" target="downloadFile">下载数据库SQL</a>
+					<div style="padding-left: 20px;">
+						<p>用户账号密码：a/a </p>
+						<p>项目架构: Tomcat + Servlet + Vue.js等前端UI框架  </p>
+						主要功能包括(1.登录注册 2.图书增删改查)等
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div id="topicinfo">
+			<ul>
+
+				<li>
+					<h3> ECharts </h3>
+					<p style="color: #909399;font-size: 14px;">简介: 一个基于 JavaScript 的开源可视化图表库</p>
+					<p>
+						<a href="https://echarts.apache.org/examples/zh/index.html" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">官方文档与实例</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/m0_55734030/article/details/127559434" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">echarts入门教程（超级详细带案例）</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/qq_41974199/article/details/129270804" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">ECharts教程(详细)</a>
+					</p>
+				</li>
+
+				<li>
+					<h3> Easy Excel </h3>
+					<p style="color: #909399;font-size: 14px;">简介: EasyExcel是一个基于Java的、快速、简洁、解决大文件内存溢出的Excel处理工具。他能让你在不用考虑性能、内存的等因素的情况下，快速完成Excel的读、写等功能。</p>
+					<p>
+						<a href="https://easyexcel.opensource.alibaba.com/docs/current/" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">官方文档</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/m0_50281408/article/details/134391128" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">EasyExcel入门使用教程</a>
+					</p>
+					<p>
+						<a href="https://www.zhihu.com/tardis/bd/art/695639722?source_id=1001" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">彻底玩转EasyExcel</a>
+					</p>
+					<p>
+						<a href="https://www.cnblogs.com/fan223/articles/16996141.html" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Easy Excel 使用总结 </a>
+					</p>
+				</li>
+
+				<li>
+					<h3>CKEditor(富文本编辑器)</h3>
+					<p >
+						<a href="http://www.hyycinfo.com/yc_article/6934000" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">CKEditor 之精简模式</a>
+					</p>
+					<p>
+						<a href="http://www.hyycinfo.com/yc_article/6947140" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">CKEditor 之配置图片上传</a>
+					</p>
+					<p>
+						<a href="https://ckeditor.com/ckeditor-4/download/#ckeditor-4" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">CKEditor4 下载地址</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>验证码2.0</h3>
+					<p style="color: #909399;font-size: 14px;">
+						验证码2.0是阿里云推出的新一代验证码产品，广泛地应用在账号注册、短信发送、票务预订、信息查询、免费下载、论坛发帖、
+						在线投票等交互模块，通过简单、安全、多样的交互逻辑，提供区分机器脚本和自然人的验证服务，
+						能够缓解及防止计算机程序模拟人类用户来滥用网络资源，在提升网站资源不被恶意程序访问的防御能力的同时，保持真实的用户体验。
+					</p>
+					<p>
+						<a href="https://help.aliyun.com/zh/captcha/captcha2-0/product-overview/what-is-alibaba-cloud-captcha-2" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">官方文档</a>
+					</p>
+					<p>
+						<a href="https://help.aliyun.com/zh/captcha/captcha2-0/user-guide/web-and-h5-access" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Web和H5接入</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>对象存储</h3>
+					<p>
+						<a href="https://help.aliyun.com/zh/oss/" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">阿里云OSS官方文档</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/lsf15870973083/article/details/131873084" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">阿里云OSS使用教程</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/AN_NI_112/article/details/132076550" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">阿里云OSS的开通+配置及其使用</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>短信服务</h3>
+					<p>
+						<a href="https://help.aliyun.com/zh/sms/product-overview/product-introduction/" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">阿里云短信服务官方文档</a>
+					</p>
+					<p>
+						<a href="https://zhuanlan.zhihu.com/p/634449088" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">阿里云短信简介和接入流程</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/weixin_45377770/article/details/106235791" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">如何发送手机短信验证码</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>语音识别</h3>
+					<p>
+						<a href="https://ai.baidu.com/ai-doc/SPEECH/Tl9mh38eu" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">百度语音识别官方文档</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/heima005/article/details/127318483" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">百度AI-语音识别&图片搜索(Java)</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/leavemyleave/article/details/134385584" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">使用百度语音识别技术实现文字转语音的Java应用</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>人脸识别</h3>
+					<p>
+						<a href="https://cloud.baidu.com/doc/FACE/index.html" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">百度人脸识别官方文档</a>
+					</p>
+					<p>
+						<a href="https://www.jb51.net/article/234133.htm" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">JavaCV调用百度AI实现人脸检测方法详解</a>
+					</p>
+					<p>
+						<a href="https://www.cnblogs.com/runningA/p/12531974.html" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java对接百度智能云人脸识别</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>高德地图</h3>
+					<p>
+						<a href="https://lbs.amap.com/api/webservice/create-project-and-key" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">高德地图官方文档</a>
+					</p>
+					<p>
+						<a href="https://lbs.amap.com/demo/javascript-api-v2/example/calcutation/calculate-distance-between-two-markers" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">两点间距离-距离/面积计算-示例</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>智能客服</h3>
+					<p>
+						<a href="https://cloud.baidu.com/doc/UNIT-LLM/s/tlrydwwi6" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">百度智能客服官方文档</a>
+					</p>
+					<p>
+						<a href="https://www.jb51.net/program/312812qtr.htm" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java使用百度AI接口实现智能机器人对话系统</a>
+					</p>
+				</li>
+
+
+				<li>
+					<h3>Gitee授权登录</h3>
+					<p>
+						<a href="https://blog.csdn.net/qq_41647780/article/details/119616662" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java实现Gitee登录</a>
+					</p>
+					<p>
+						<a href="https://blog.51cto.com/u_16099247/9337766" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">java实现gitee授权登录 git登录用户</a>
+					</p>
+				</li>
+
+				<li>
+					<h3>邮件发送</h3>
+					<p>
+						<a href="https://blog.csdn.net/yhx101/article/details/133814513" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">java 邮件发送的几种方式</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/q_qwp_p/article/details/131621962" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java实现邮件的发送（E-mail）</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/weixin_72764731/article/details/131614442" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">java实现发送邮件</a>
+					</p>
+				</li>
+				<li>
+					<h3>Word转PDF</h3>
+					<p>
+						<a href="https://blog.csdn.net/adminstate/article/details/135839567" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java 将word转为PDF</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/qq_44033725/article/details/135839934" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">基于java技术实现word转pdf</a>
+					</p>
+					<p>
+						<a href="https://blog.csdn.net/Mou_O/article/details/134830036" class="title-a"
+						   style="font-size: 16px;font-weight: normal;" target="_blank">Java 将word转为PDF的三种方式</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<script type="text/javascript" src="js/watermark.js"></script>
+<script type="text/javascript">
+
+	// watermark.init({
+	//            watermark_txt:"源辰信息",
+	//            watermark_alpha:0.2,
+	//            watermark_fontsize:"13px",
+	//            watermark_width: 200
+	//        });
+	window.onload=function(){
+		document.getElementById("topicinfo").style.display = "none";
+		//document.getElementById("projectmodel").style.display = "none";
+	}
+	function handleClick(url){
+		window.open(url, '_blank');
+	}
+	function handleClick(){
+		document.getElementById("project").style.display = "block";
+		document.getElementById("topicinfo").style.display = "none";
+		document.getElementById("projectmodel").style.display = "none";
+	}
+	function handleClicks(){
+		document.getElementById("topicinfo").style.display = "block";
+		document.getElementById("project").style.display = "none";
+		document.getElementById("projectmodel").style.display = "none";
+	}
+	function handleClickmodel(){
+		document.getElementById("projectmodel").style.display = "block";
+		document.getElementById("topicinfo").style.display = "none";
+		document.getElementById("project").style.display = "none";
+
+	}
+</script>
+</body>
+</html>
